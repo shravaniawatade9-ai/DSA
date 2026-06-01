@@ -12,7 +12,7 @@ public class datatype {
         System.out.println(x);
 
         char shravani = '$';
-        int y = (int)shravani;         // explicit typecasting i.e saglyan dakhvun dakhavun karne
+        int y = (int)shravani;         
         System.out.println(y); // value of my name in ascii i.e in integer is 36
 
         char viraj = '3';

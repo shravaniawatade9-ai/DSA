@@ -20,6 +20,5 @@ public class mathfunction {
         int b = sc.nextInt();
         int c = sc.nextInt();
         System.out.println(Math.max(Math.max(a,b),c));
-
     }
 }

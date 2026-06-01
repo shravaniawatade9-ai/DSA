@@ -4,9 +4,11 @@ public class Arguments {
     public static void max(int a, int b, int c) { // parameters =(variables) like boxes that store value
         if (a >= b && a >= c) {
             System.out.println(a);
-        } else if (b >= a && b >= c) {
+        } 
+        else if (b >= a && b >= c){ 
             System.out.println(b);
-        } else {
+        } 
+        else {
             System.out.println(c);
         }
     }
