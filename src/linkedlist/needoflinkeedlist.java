@@ -31,6 +31,7 @@ public class needoflinkeedlist {
 
         // a ka next b;b ka next c and so on
         // so b is a.next
+        //(linking) connecting
         a.next = b;
         b.next = c;
         c.next = d;
@@ -42,6 +43,7 @@ public class needoflinkeedlist {
         System.out.println(c);
         System.out.println(a.next.next);  // will give address of c
         System.out.println(a.next.next.val);  // will give value of c
+
 
     }
 }
