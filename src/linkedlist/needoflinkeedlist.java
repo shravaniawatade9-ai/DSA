@@ -8,6 +8,36 @@ class Node{
         this.val = val;
     }
 }
+class ll{ //user defined data structure
+    Node head;//null by default
+    Node tail;// always if head is null tail is also null
+    void addathead(int val){
+        Node temp = new Node(val);
+        if(head == null){ head = tail = temp;}
+        else{
+            temp.next = temp;
+            head = temp;
+        }
+    }
+    void addattail(int val){
+        Node temp = new Node(val);
+        if(tail == null){ head = tail = temp;}
+        else{
+            tail.next = temp;
+            tail = temp;
+        }
+    }
+    void display(){
+        if(head == null){return;}
+        Node temp = head;
+        while(head != null){
+            System.out.print(head.val+" ");
+            temp = temp.next;
+        }
+        System.out.println();
+    }
+
+}
 
 public class needoflinkeedlist {
     static void main() {
@@ -43,7 +73,5 @@ public class needoflinkeedlist {
         System.out.println(c);
         System.out.println(a.next.next);  // will give address of c
         System.out.println(a.next.next.val);  // will give value of c
-
-
     }
 }
